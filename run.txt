@@ -1,0 +1,15 @@
+старт самый:
+docker-compose up airflow-init
+docker-compose up -d
+
+Удалить контейнер:
+docker-compose down (-v) если хочется удалить все объемы
+
+Перезапустить AirFlow:
+docker compose restart airflow-webserver airflow-scheduler
+
+
+
+docker compose down --remove-orphans --volumes
+docker compose pull
+docker compose up -d
